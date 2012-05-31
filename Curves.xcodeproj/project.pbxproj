@@ -6,14 +6,94 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EADFBBA21577B03300119447 /* Curves.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EADFBBA11577B03300119447 /* Curves.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EADFBB9A1577B03300119447 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				EADFBBA21577B03300119447 /* Curves.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EA7CD16A156B0CA3004AA187 /* List.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = List.c; path = ../../../../Dropbox/Breakout/Curves/List.c; sourceTree = "<group>"; };
+		EA7CD16B156B0CA3004AA187 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = List.h; path = ../../../../Dropbox/Breakout/Curves/List.h; sourceTree = "<group>"; };
+		EA7CD16C156B0CA3004AA187 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../../../../Dropbox/Breakout/Curves/main.c; sourceTree = "<group>"; };
+		EA7CD17F156B0D56004AA187 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		EA7CD181156B0D5C004AA187 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/GLUT.framework; sourceTree = DEVELOPER_DIR; };
+		EADFBB9C1577B03300119447 /* Curves */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Curves; sourceTree = BUILT_PRODUCTS_DIR; };
+		EADFBBA11577B03300119447 /* Curves.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Curves.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EADFBB991577B03300119447 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		EA7CD161156B0C82004AA187 = {
 			isa = PBXGroup;
 			children = (
+				EA7CD181156B0D5C004AA187 /* GLUT.framework */,
+				EA7CD17F156B0D56004AA187 /* OpenGL.framework */,
+				EADFBB9E1577B03300119447 /* Curves */,
+				EA7CD172156B0D04004AA187 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		EA7CD172156B0D04004AA187 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EADFBB9C1577B03300119447 /* Curves */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EADFBB9E1577B03300119447 /* Curves */ = {
+			isa = PBXGroup;
+			children = (
+				EA7CD16A156B0CA3004AA187 /* List.c */,
+				EA7CD16B156B0CA3004AA187 /* List.h */,
+				EA7CD16C156B0CA3004AA187 /* main.c */,
+				EADFBBA11577B03300119447 /* Curves.1 */,
+			);
+			path = Curves;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EADFBB9B1577B03300119447 /* Curves */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EADFBBA31577B03300119447 /* Build configuration list for PBXNativeTarget "Curves" */;
+			buildPhases = (
+				EADFBB981577B03300119447 /* Sources */,
+				EADFBB991577B03300119447 /* Frameworks */,
+				EADFBB9A1577B03300119447 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Curves;
+			productName = Curves;
+			productReference = EADFBB9C1577B03300119447 /* Curves */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		EA7CD163156B0C82004AA187 /* Project object */ = {
@@ -29,12 +109,24 @@
 				en,
 			);
 			mainGroup = EA7CD161156B0C82004AA187;
+			productRefGroup = EA7CD172156B0D04004AA187 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				EADFBB9B1577B03300119447 /* Curves */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EADFBB981577B03300119447 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		EA7CD168156B0C82004AA187 /* Debug */ = {
@@ -49,6 +141,53 @@
 			};
 			name = Release;
 		};
+		EADFBBA41577B03300119447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EADFBBA51577B03300119447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -60,6 +199,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		EADFBBA31577B03300119447 /* Build configuration list for PBXNativeTarget "Curves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADFBBA41577B03300119447 /* Debug */,
+				EADFBBA51577B03300119447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
