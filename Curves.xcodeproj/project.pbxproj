@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EADFBBA21577B03300119447 /* Curves.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EADFBBA11577B03300119447 /* Curves.1 */; };
+		EADFBBAE1578329300119447 /* List.c in Sources */ = {isa = PBXBuildFile; fileRef = EADFBBAB1578329300119447 /* List.c */; };
+		EADFBBAF1578329300119447 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EADFBBAD1578329300119447 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,13 +26,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EA7CD16A156B0CA3004AA187 /* List.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = List.c; path = ../../../../Dropbox/Breakout/Curves/List.c; sourceTree = "<group>"; };
-		EA7CD16B156B0CA3004AA187 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = List.h; path = ../../../../Dropbox/Breakout/Curves/List.h; sourceTree = "<group>"; };
-		EA7CD16C156B0CA3004AA187 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../../../../Dropbox/Breakout/Curves/main.c; sourceTree = "<group>"; };
 		EA7CD17F156B0D56004AA187 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
 		EA7CD181156B0D5C004AA187 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/GLUT.framework; sourceTree = DEVELOPER_DIR; };
 		EADFBB9C1577B03300119447 /* Curves */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Curves; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADFBBA11577B03300119447 /* Curves.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Curves.1; sourceTree = "<group>"; };
+		EADFBBAB1578329300119447 /* List.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = List.c; sourceTree = "<group>"; };
+		EADFBBAC1578329300119447 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		EADFBBAD1578329300119447 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +67,9 @@
 		EADFBB9E1577B03300119447 /* Curves */ = {
 			isa = PBXGroup;
 			children = (
-				EA7CD16A156B0CA3004AA187 /* List.c */,
-				EA7CD16B156B0CA3004AA187 /* List.h */,
-				EA7CD16C156B0CA3004AA187 /* main.c */,
+				EADFBBAB1578329300119447 /* List.c */,
+				EADFBBAC1578329300119447 /* List.h */,
+				EADFBBAD1578329300119447 /* main.c */,
 				EADFBBA11577B03300119447 /* Curves.1 */,
 			);
 			path = Curves;
@@ -123,6 +125,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EADFBBAE1578329300119447 /* List.c in Sources */,
+				EADFBBAF1578329300119447 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +211,7 @@
 				EADFBBA51577B03300119447 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
